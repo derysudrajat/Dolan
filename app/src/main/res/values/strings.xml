@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Dolan</string>
+    <string name="profile_desc">Seorang Mahasiswa di Jurusan Software Engineering. Fakultas Teknologi Informatika. Institut Teknologi Telkom, dengan pengalaman mengerjakan proyek berbasis Android, dan mengajar sebagai asisten lab di laboratorium pemrograman. Bercita-cita menjadi peneliti dan teknopreneur di masa depan dan mewujudkan kepribadian yang rajin dan semangat untuk belajar</string>
+    <string name="profile_mail">dery.sudrajat17@gamil.com</string>
+    <string name="profile_name">Dery Sudrajat</string>
+    <string name="follow_me">Follow Aku</string>
+    <string name="github">GitHub</string>
+    <string name="github_link">github.com/derysudrajat</string>
+    <string name="instagram">Instagram</string>
+    <string name="instagram_link">instagram.com/derysudrajat</string>
+    <string name="medium">Medium</string>
+    <string name="medium_link">medium.com/@dery.io</string>
+    <string name="galeri">Galeri</string>
+    <string name="tagline">Jelajahi Wisata Nusantara</string>
+    <string name="destinasi_wisata">Destinasi Wisata</string>
+    <string name="profile">Profil</string>
+    <string name="destinasi">Destinasi</string>
+</resources>
