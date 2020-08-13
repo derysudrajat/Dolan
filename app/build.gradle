@@ -51,6 +51,8 @@ dependencies {
     implementation("io.coil-kt:coil:0.11.0")
     // carousel-view
     implementation 'com.github.jama5262:CarouselView:1.1.0'
+    // photo view
+    implementation 'com.github.stfalcon:stfalcon-imageviewer:1.0.1'
 
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

@@ -7,6 +7,7 @@
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/contentImage"
         style="@style/ItemsTouchable"
         app:cardCornerRadius="8dp"
         app:cardUseCompatPadding="true"
