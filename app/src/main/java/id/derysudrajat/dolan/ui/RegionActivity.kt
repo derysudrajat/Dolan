@@ -3,9 +3,7 @@ package id.derysudrajat.dolan.ui
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DefaultItemAnimator
-import id.derysudrajat.dolan.R
 import id.derysudrajat.dolan.adapter.DestinationMainAdapter
 import id.derysudrajat.dolan.databinding.ActivityRegionBinding
 import id.derysudrajat.dolan.model.Region
@@ -27,9 +25,6 @@ class RegionActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
         supportActionBar?.apply {
             title = dataIntent?.title
-            titleColor = ContextCompat.getColor(this@RegionActivity,
-                R.color.colorGray
-            )
             setDisplayHomeAsUpEnabled(true)
         }
 

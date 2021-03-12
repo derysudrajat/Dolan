@@ -15,7 +15,6 @@
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsingToolbar"
-            style="@style/Toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
@@ -48,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="-40dp"
-        android:backgroundTint="@android:color/white"
+        android:backgroundTint="?android:attr/windowBackground"
         android:elevation="10dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="0dp"
@@ -65,7 +64,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/white">
+            android:background="?android:attr/windowBackground">
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -142,7 +141,6 @@
                 android:fontFamily="@font/roboto_medium"
                 android:text="@string/galeri"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="#232323"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvDesc" />
@@ -156,7 +154,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
                 android:nestedScrollingEnabled="false"
-                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Dolan</string>
-    <string name="profile_desc">Seorang Mahasiswa di Jurusan Software Engineering. Fakultas Teknologi Informatika. Institut Teknologi Telkom, dengan pengalaman mengerjakan proyek berbasis Android, dan mengajar sebagai asisten lab di laboratorium pemrograman. Bercita-cita menjadi peneliti dan teknopreneur di masa depan dan mewujudkan kepribadian yang rajin dan semangat untuk belajar</string>
-    <string name="profile_mail">dery.sudrajat17@gamil.com</string>
+    <string name="profile_desc">1 dari 3000 partisipan di Bangkit Academy yang dimpinpin oleh Google, Gojek, Tokopedia, dan Traveloka. Memiliki tujuan menjadi Associate Android Developer pada tahun ini.</string>
+    <string name="profile_mail">a1201526@bangkit.academy</string>
     <string name="profile_name">Dery Sudrajat</string>
     <string name="follow_me">Follow Aku</string>
     <string name="github">GitHub</string>

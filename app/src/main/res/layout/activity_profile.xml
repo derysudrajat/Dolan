@@ -14,7 +14,6 @@
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsingToolbar"
-            style="@style/Toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
@@ -48,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="-40dp"
-        android:backgroundTint="@android:color/white"
+        android:backgroundTint="?android:attr/windowBackground"
         android:elevation="10dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="0dp"
@@ -61,7 +60,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="16dp"
-        android:backgroundTint="@android:color/white"
+        android:backgroundTint="?android:attr/windowBackground"
         app:cardCornerRadius="75dp"
         app:cardElevation="1dp"
         app:layout_anchor="@id/appbar"
@@ -73,6 +72,7 @@
             android:id="@+id/ivProfile"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="4dp"
             android:scaleType="centerCrop"
             tools:srcCompat="@tools:sample/avatars" />
     </androidx.cardview.widget.CardView>
@@ -81,7 +81,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/white"
+        android:background="?android:attr/windowBackground"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <include

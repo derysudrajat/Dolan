@@ -5,7 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import coil.api.load
+import coil.load
+
 import com.stfalcon.imageviewer.StfalconImageViewer
 import id.derysudrajat.dolan.R
 import id.derysudrajat.dolan.databinding.ItemPhotoBinding
@@ -29,7 +30,7 @@ class DetailPhotosAdapter(
     override fun onBindViewHolder(holder: DetailPhotosViewHolder, position: Int) {
         binding.ivPhoto.load(listPhotos[position]) { crossfade(true) }
         binding.contentImage.setOnClickListener {
-            StfalconImageViewer.Builder<String>(context, listPhotos) { imageView, image ->
+            StfalconImageViewer.Builder(context, listPhotos) { imageView, image ->
                 imageView.load(image) { crossfade(true) }
             }.withStartPosition(position).show()
         }

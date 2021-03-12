@@ -5,11 +5,11 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DefaultItemAnimator
-import coil.api.load
-import id.derysudrajat.dolan.R
+import coil.load
 import id.derysudrajat.dolan.adapter.DetailPhotosAdapter
 import id.derysudrajat.dolan.databinding.ActivityDetailDestinationBinding
 import id.derysudrajat.dolan.model.Destination
+import id.derysudrajat.dolan.util.Data.getColorFromAttr
 
 class DetailDestinationActivity : AppCompatActivity() {
 
@@ -35,10 +35,7 @@ class DetailDestinationActivity : AppCompatActivity() {
             collapsingToolbar.apply {
                 title = dataIntent.name
                 setCollapsedTitleTextColor(
-                    ContextCompat.getColor(
-                        this@DetailDestinationActivity,
-                        R.color.colorGray
-                    )
+                    getColorFromAttr(android.R.attr.textColor)
                 )
                 setExpandedTitleColor(
                     ContextCompat.getColor(

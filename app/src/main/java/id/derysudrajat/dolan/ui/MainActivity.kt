@@ -5,7 +5,8 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DefaultItemAnimator
-import coil.api.load
+import coil.load
+import coil.transform.CircleCropTransformation
 import id.derysudrajat.dolan.R
 import id.derysudrajat.dolan.adapter.DestinationMainAdapter
 import id.derysudrajat.dolan.databinding.ActivityMainBinding
@@ -55,23 +56,20 @@ class MainActivity : AppCompatActivity() {
             show()
         }
 
-        val mAdapter =
-            DestinationMainAdapter(this, data)
-
         binding.rvMain.apply {
             setHasFixedSize(true)
             itemAnimator = DefaultItemAnimator()
-            adapter = mAdapter
+            adapter = DestinationMainAdapter(context, data)
         }
 
         binding.ivAvatar.apply {
-            load(Data.myAva) { crossfade(true) }
+            load(Data.myAva) {
+                crossfade(true)
+                transformations(CircleCropTransformation())
+            }
             setOnClickListener {
                 startActivity(
-                    Intent(
-                        this@MainActivity,
-                        ProfileActivity::class.java
-                    )
+                    Intent(this@MainActivity, ProfileActivity::class.java)
                 )
 
             }

@@ -1,5 +1,9 @@
 package id.derysudrajat.dolan.util
 
+import android.content.Context
+import android.util.TypedValue
+import androidx.annotation.AttrRes
+import androidx.annotation.ColorInt
 import id.derysudrajat.dolan.model.Destination
 import id.derysudrajat.dolan.model.Region
 
@@ -325,4 +329,14 @@ object Data {
     }
 
     fun Float.round(decimals: Int = 2): Double = "%.${decimals}f".format(this).toDouble()
+
+    @ColorInt
+    fun Context.getColorFromAttr(
+        @AttrRes attrColor: Int,
+        typedValue: TypedValue = TypedValue(),
+        resolveRefs: Boolean = true
+    ): Int {
+        theme.resolveAttribute(attrColor, typedValue, resolveRefs)
+        return typedValue.data
+    }
 }
